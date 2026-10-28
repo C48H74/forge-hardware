@@ -1,0 +1,133 @@
+{
+  "schema": 1,
+  "scope": "Nominal geometry, actual file roundtrips and parameter regeneration. No manufacturing, pressure, thermal, load or simulator certification.",
+  "models": [
+    {
+      "model": "gearbox_housing",
+      "source": "examples/gearbox_housing.py",
+      "source_sha256": "1201584410c4e7d9b4f5746f9920dafc5b39abed76bcec63b9984f5022c36cf7",
+      "parts": 4,
+      "valid_solids": 4,
+      "step_roundtrip_valid": true,
+      "volume_mm3": 582315.222802,
+      "envelope_mm": [
+        180.0,
+        134.0,
+        79.15
+      ],
+      "semantic_features": 38,
+      "build_seconds": 26.704,
+      "exports": {
+        "gearbox_housing.3mf": "afa4c5e85e0d3cf0efdca22b984790bd4f079ebdbcf56dd9e26722c26e7f519e",
+        "gearbox_housing.glb": "be73beb10179e5b65839488b0424c3c2f65d439438cd95718eb7a15b76fb5935",
+        "gearbox_housing.step": "10e17326d6de62a4cd5d8964741c5d37e70620bdef7f6cccee8a39609f42df79",
+        "gearbox_housing.stl": "0b952e13457b067168d5446abf947d28ccce9a5fac8918a245fc8a7980be7dd6",
+        "meshes/cover.stl": "55538f61ac1b2ee4860705fbdeb2d995700e25fe50f769bbe3cdf99d7e27dc86",
+        "meshes/bottom_shell.stl": "e4f29469e40f5955ae0ebe3f9730f3cd1928c15d40424f949ac7338891db8b48",
+        "meshes/alignment_pin_left.stl": "776926c8edea2b07e478c593f94560519e969e3f08ffeb3611107d0691aa8bc0",
+        "meshes/alignment_pin_right.stl": "85b0eecbd92554c77e67b0a001ae21ad230279df8910534f5308e5da1dbe7cad"
+      },
+      "parameter_edit": {
+        "parameters": {
+          "width": 90
+        },
+        "step_roundtrip_valid": true,
+        "volume_mm3": 625715.222802,
+        "unchanged_parts": []
+      }
+    },
+    {
+      "model": "parallel_gripper",
+      "source": "examples/parallel_gripper.py",
+      "source_sha256": "0315c6e221b3c01f6beb20a7216a5519e6b181a84f864557210217e23a2efda0",
+      "parts": 9,
+      "valid_solids": 9,
+      "step_roundtrip_valid": true,
+      "volume_mm3": 180497.302133,
+      "envelope_mm": [
+        112.0,
+        64.0,
+        89.0
+      ],
+      "semantic_features": 20,
+      "build_seconds": 12.43,
+      "exports": {
+        "parallel_gripper.stl": "1ae260db34f68c23303ac8569226efa2cc78af3440e0194b461d6b3330eae2be",
+        "parallel_gripper.glb": "3f485d34c0f50476104fcbf76456cd64ea4165bf91829712fcef60c64d598cf7",
+        "parallel_gripper.step": "deb6736dc8fbf43a9d09edff639eef40f275edb4bfb75a26a8d78eaf09bb12d3",
+        "parallel_gripper.sdf": "b9b0eacdf0d295ab4420c5b7c84084dc59cde74477a15ce47bcb942f42cff58c",
+        "parallel_gripper.3mf": "22e551131a0447f7146675fb6cf10f6faf115dcb95aca4185918fbafcc24d8d8",
+        "parallel_gripper.urdf": "ff76b79a083ded3b6c37adbed82f22c55b693ca102f160e8ecf352d9b10a413a",
+        "parallel_gripper.srdf": "94d3c2fe5903c610973a0b447b458f4e5e92c746698c8ed4afe40ff575630179",
+        "meshes/pad_right.stl": "116d7aeb164659d0701cc4b8177836dcad2e7697053c3e51b265be0eb01c83fa",
+        "meshes/guide_front.stl": "452a83ca9179f076979882a2f47c6b6765f9ca3aa0b27d42ef66723e499acb16",
+        "meshes/carriage_left.stl": "a18e3a9eff374626b44460f18aa655549dcc79bb25380ab0320083e224b7881c",
+        "meshes/finger_right.stl": "f4fb7921e23369f50dce21319dcbecaf4a3f28805839c20cc40db71dca9307fc",
+        "meshes/finger_left.stl": "3f7de1d73d8948d854cd44949e140f68ee0ec84c0ede561704860a658b610a23",
+        "meshes/pad_left.stl": "063ea5bd883ded954dc812830a047cc63783547567cb3fe3b4d530729ca52136",
+        "meshes/guide_rear.stl": "452a83ca9179f076979882a2f47c6b6765f9ca3aa0b27d42ef66723e499acb16",
+        "meshes/palm.stl": "a771eb45c75e77a5c06861ed313ac6bb7f085c391c5a8588086515ae3b20cb0f",
+        "meshes/carriage_right.stl": "a18e3a9eff374626b44460f18aa655549dcc79bb25380ab0320083e224b7881c"
+      },
+      "parameter_edit": {
+        "parameters": {
+          "finger_length": 65
+        },
+        "step_roundtrip_valid": true,
+        "volume_mm3": 185516.360223,
+        "unchanged_parts": [
+          "palm",
+          "guide_front",
+          "guide_rear",
+          "carriage_left",
+          "pad_left",
+          "carriage_right",
+          "pad_right"
+        ]
+      },
+      "robot": {
+        "parser": "urdf_parser_py",
+        "root": "palm",
+        "links": 9,
+        "joints": 8,
+        "moving_joints": 2,
+        "mass_properties": "Uniform-solid estimates from assumed material densities; not measured."
+      }
+    },
+    {
+      "model": "cooling_manifold",
+      "source": "examples/cooling_manifold.py",
+      "source_sha256": "5a85149aab4a9a96ddc6218b4b36067a5081c7a4a684bd5bb71e9b890fd699a0",
+      "parts": 2,
+      "valid_solids": 2,
+      "step_roundtrip_valid": true,
+      "volume_mm3": 239932.836095,
+      "envelope_mm": [
+        120.0,
+        84.0,
+        40.0
+      ],
+      "semantic_features": 14,
+      "build_seconds": 21.85,
+      "exports": {
+        "cooling_manifold.stl": "bddcdfe3b525f9505e41c49c77a089a4af58dcc434ce9011dfa903115a4918df",
+        "flat-cover.dxf": "c2801eec5e3c6ba0c1c0e534af0124aeee52cef6f3e502c540174e3eb1368b77",
+        "cooling_manifold.step": "1559f1143c23ada663bb8c5b4b264c5b2c31995d8ad5ed9ef14ab28f22234a2a",
+        "cooling_manifold.glb": "c0efed7d945e62657ad7c3f9acc79a6fad97a79801e98ee860ade118293a7346",
+        "cooling_manifold.3mf": "1824d1362e9387473ddd1674dc9d60a2d4c0a3ceeb30d7a6cd29452f97cccfe6",
+        "meshes/cold_plate.stl": "87d0253fa3c256b0c8e9086a9e90954a217804ab28df9c2470cf0f5f37f0cbe5",
+        "meshes/cover.stl": "e1ae1aaa34a99a63cedf01e9c114a90a455bcd12276bdfb722feb6f1d22bb5d3"
+      },
+      "parameter_edit": {
+        "parameters": {
+          "channel_depth": 9
+        },
+        "step_roundtrip_valid": true,
+        "volume_mm3": 234762.836095,
+        "unchanged_parts": [
+          "cover"
+        ]
+      }
+    }
+  ]
+}
