@@ -1,0 +1,12 @@
+{
+  "name": "forge-hardware",
+  "version": "0.1.0",
+  "description": "Editable CAD and robotics toolkit for coding agents",
+  "author": {
+    "name": "C48H74",
+    "url": "https://github.com/C48H74"
+  },
+  "repository": "https://github.com/C48H74/forge-hardware",
+  "license": "MIT",
+  "skills": "./skills/"
+}
