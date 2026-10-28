@@ -6,6 +6,22 @@
 
 Forge Hardware gives an AI coding agent a practical workflow for turning plain-language ideas into parametric Python designs, inspecting their geometry, and making precise follow-up changes. The agent writes the source; build123d/OpenCascade generates the geometry. No hosted backend, cloud CAD account or LLM API key is required by the toolkit.
 
+## Featured project · Centrifugal pump 4″ × 3″
+
+### Model overview
+Isometric, side, front and top views of the pump, coupling, motor and base.
+
+[![Centrifugal pump 4 by 3 inches — isometric, side, front and top views](bomba_centrifuga_4x3_4vistas.png)](bomba_centrifuga_4x3_4vistas.png)
+
+### Technical reference sheet
+Assembly layout with dimensions and orthographic views. Open the image to inspect the details.
+
+[![Horizontal centrifugal pump — dimensioned assembly reference sheet](prancha-3.png)](prancha-3.png)
+
+*Visual project references; the drawing is marked as not released for fabrication.*
+
+## More CAD demonstrations
+
 ![Complex CAD demonstrations](https://github.com/user-attachments/assets/aaabe66d-857c-42f9-b944-cd683be8635c)
 
 **[See three complex, tested demonstrations →](demos/README.md)** — split bearing housing, parallel robotic gripper and serpentine cooling plate; editable sources, real CAD images and reproduction commands.
