@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forge-hardware"
+version = "0.1.0"
+description = "Editable CAD and robotics toolkit for coding agents"
+requires-python = ">=3.11,<3.14"
+dependencies = ["build123d==0.12.0", "numpy>=2,<3", "pillow>=10,<13"]
+license = "MIT"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.9", "urdf-parser-py==0.0.4"]
+
+[project.scripts]
+forge = "forge_hardware.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["forge_hardware*"]
+
+[tool.setuptools.package-data]
+forge_hardware = ["viewer/*.html", "viewer/*.js", "viewer/*.tsx", "viewer/*.ts"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
