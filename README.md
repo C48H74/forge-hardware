@@ -6,7 +6,9 @@
 
 Forge Hardware gives an AI coding agent a practical workflow for turning plain-language ideas into parametric Python designs, inspecting their geometry, and making precise follow-up changes. The agent writes the source; build123d/OpenCascade generates the geometry. No hosted backend, cloud CAD account or LLM API key is required by the toolkit.
 
-![Fixture geometry review](docs/fixture-drawing.svg)
+![Complex CAD demonstrations](https://github.com/user-attachments/assets/aaabe66d-857c-42f9-b944-cd683be8635c)
+
+**[See three complex, tested demonstrations →](demos/README.md)** — split bearing housing, parallel robotic gripper and serpentine cooling plate; editable sources, real CAD images and reproduction commands.
 
 ## Quick start
 
