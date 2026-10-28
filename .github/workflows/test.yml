@@ -15,5 +15,6 @@ jobs:
           python-version: ${{ matrix.python }}
       - run: python -m pip install -e '.[dev]'
       - run: python -m pytest -q
+      - run: python scripts/build_extensions.py --check
       - run: node tests/viewer.mjs
       - run: python benchmarks/run.py --runs 1 --output build/benchmark.json
