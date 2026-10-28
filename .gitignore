@@ -8,3 +8,6 @@ build/
 dist/
 .cache/
 node_modules/
+
+# Reproducible real-CAD presentation renders (gallery uses hosted attachments).
+demos/images/*.png
