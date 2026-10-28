@@ -1,0 +1,20 @@
+{
+  "name": "forge-hardware",
+  "interface": {
+    "displayName": "Forge Hardware"
+  },
+  "plugins": [
+    {
+      "name": "forge-hardware",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
