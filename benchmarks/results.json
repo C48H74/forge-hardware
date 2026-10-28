@@ -1,0 +1,38 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "build123d": "0.12.0",
+  "scope": "Warm-process geometry and export latency. No LLM latency, cold imports, fabrication or simulation validation.",
+  "results": [
+    {
+      "example": "fixture",
+      "samples_seconds": [
+        2.014065080000364,
+        2.0235836760002712,
+        2.5842305239998495
+      ],
+      "median_seconds": 2.0235836760002712,
+      "artifact_count": 18
+    },
+    {
+      "example": "bracket",
+      "samples_seconds": [
+        0.6585457209998822,
+        0.7154205460001322,
+        0.7301091609997457
+      ],
+      "median_seconds": 0.7154205460001322,
+      "artifact_count": 16
+    },
+    {
+      "example": "robot_arm",
+      "samples_seconds": [
+        0.30352074200027346,
+        0.3126094050003303,
+        0.3274888729997656
+      ],
+      "median_seconds": 0.3126094050003303,
+      "artifact_count": 20
+    }
+  ]
+}
