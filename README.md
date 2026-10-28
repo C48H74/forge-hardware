@@ -126,7 +126,7 @@ See [measured results](benchmarks/results.json). Timings measure warm-process ge
 
 ## Practical limits
 
-DFM screening checks envelopes and author-declared thicknesses. Review drawings are not toleranced production drawings; flat-pattern authoring does not automatically unfold sheet metal. The offline viewport uses triangle painting, so intersecting surfaces may show ordering artifacts; inspect STEP in a CAD tool for final review. Trusted model scripts execute Python with your user permissions. Neither the daemon nor MCP tools provide a code sandbox.
+DFM screening checks envelopes and author-declared thicknesses. Review drawings are not toleranced production drawings; flat-pattern authoring does not automatically unfold sheet metal. The offline viewport uses tessellated surfaces and depth buffering; inspect STEP in a CAD tool for final exact geometry review. Trusted model scripts execute Python with your user permissions. Neither the daemon nor MCP tools provide a code sandbox.
 
 ## References and license
 
