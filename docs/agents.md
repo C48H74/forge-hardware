@@ -1,5 +1,8 @@
 # Agent installation
 
+For platform packages, installation commands and standalone skill locations,
+see the [extension library](../extensions/README.md).
+
 1. Clone the repository into a stable tools directory.
 2. Create a clean virtual environment and install the toolkit with `python -m pip install -e /absolute/checkout`.
 3. Copy `skills/forge-hardware` into the coding agent's skill directory, or include its `SKILL.md` as instructions.
