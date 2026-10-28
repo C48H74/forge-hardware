@@ -47,11 +47,16 @@ Open **http://127.0.0.1:8740** on the computer running the viewer. Drag to orbit
 
 ## Install the coding-agent skill
 
+**[Extension library: Claude Code · Codex · Cursor · Gemini CLI →](extensions/README.md)**
+
+Use native plugin packages or install the standalone skill for your agent.
+All packages share the same modeling workflow and local CAD runtime.
+See the library for installation, updates, removal and compatibility checks.
+
 Copy `skills/forge-hardware` into your agent's skill directory, or point the agent directly at its `SKILL.md`. For Codex CLI, for example:
 
 ```bash
-mkdir -p ~/.codex/skills
-cp -R skills/forge-hardware ~/.codex/skills/forge-hardware
+python scripts/install_agent_skill.py --agent codex
 ```
 
 For ChatGPT Work, install through its personal skill workflow; copying into a terminal path does not install it into a separate ChatGPT account. See [agent setup](docs/agents.md) for the CLI and optional legacy MCP stdio interface.
