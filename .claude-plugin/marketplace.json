@@ -1,0 +1,14 @@
+{
+  "name": "forge-hardware",
+  "owner": {
+    "name": "C48H74"
+  },
+  "plugins": [
+    {
+      "name": "forge-hardware",
+      "source": "./",
+      "version": "0.1.0",
+      "description": "Editable CAD and robotics toolkit for coding agents"
+    }
+  ]
+}
